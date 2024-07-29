@@ -2,6 +2,7 @@ from utils import multiply, divide
 import pytest
 
 
+
 def test_multiply():
     a = 2
     b = 3

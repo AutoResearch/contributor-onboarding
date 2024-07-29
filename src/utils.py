@@ -1,22 +1,22 @@
-from typing import Optional
+from typing import Optional, Union
 import numpy as np
 
 # TODO: make all functions work with strings as well
 # TODO: add a new cool calculator function
 
 
-def sum(a: int, b: int) -> int:
+def sum(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
     '''
     This function returns the sum of two numbers
 
     Args:
-    a: float the first number
-    b: float the second number
+    a: int, float the first number
+    b: int, float the second number
 
     Returns:
     float the sum of a and b
     '''
-    return a + b
+    return a - b
 
 
 def multiply(a, b) -> float:
@@ -56,13 +56,10 @@ def modulo(a: int, b: int):
     b: int the divisor
 
     Returns:
-    float
+    int
     '''
 
-    # I think this could be made more efficient?
-    result = a - (np.floor(a / b) * b)
-
-    return result
+    return a % b
 
 
 def element_wise_multiply(a: np.array, b: np.array) -> np.array:
@@ -108,5 +105,6 @@ def return_random_number(seed: Optional[int] = None) -> int:
     int a random number between 0 and 100
     '''
     np.random.seed(seed)
+
 
     return np.random.randint(0, 200)
