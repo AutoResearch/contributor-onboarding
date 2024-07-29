@@ -1,5 +1,5 @@
 [project]
-name = "practice-project"
+name = "practice-project-g-1"
 description = "A practice project for open-source development"
 authors = []
 dynamic = ["version"]
@@ -24,8 +24,8 @@ test = [
 ]
 
 [project.urls]
-repository = "https://github.com/GITHUBUSERNAME/contributor-onboarding"
-documentation = "https://GITHUBUSERNAME.github.io/contributor-onboarding/"
+repository = "https://github.com/MoAljam/contributor-onboarding-g-1"
+documentation = "https://MoAljam.github.io/contributor-onboarding-g-1/"
 
 [build-system]
 requires = ["setuptools", "setuptools_scm"]

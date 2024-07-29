@@ -1,10 +1,11 @@
-from typing import Optional
+from typing import Optional, Union
+
 import numpy as np
 
 # TODO: make all functions work with strings as well
 # TODO: add a new cool calculator function
 
-def sum(a: int, b: int) -> int:
+def sum(a: Union[float, int], b: Union[float, int]) -> Union[float, int]:
     '''
     This function returns the sum of two numbers
 
@@ -55,8 +56,7 @@ def modulo(a: int, b: int):
     float
     '''
 
-    # I think this could be made more efficient?
-    result = a - (np.floor(a / b) * b)
+    result = a % b
 
     return result
 
@@ -71,27 +71,34 @@ def element_wise_multiply(a: np.array, b: np.array) -> np.array:
     Returns:
     np.array
     '''
+    try: 
+        c = np.multiply(a, b)
+    except Exception as error:
+    # handle the exception
+        print("Please check the shape of your array:", error) # An exception occurred: Most probably size mismatch of the array.
 
     # let's hope that both vectors have the same shape
 
-    return np.multiply(a, b)
+    return c
 
-def return_hexadecimal(a: int) -> float:
+
+
+def return_hexadecimal(a: int) -> str:
+
     '''
     ...
 
     Args:
-    a: float
-    b: float
+    a: int
 
     Returns:
-    float
+    str
     '''
 
     return hex(a)
 
 
-def return_random_number() -> int:
+def return_random_number(a:float, b:float) -> int:
     '''
     ...
 
@@ -103,4 +110,4 @@ def return_random_number() -> int:
     float
     '''
 
-    return np.random.randint(0, 100)
+    return np.random.randint(a, b)
