@@ -107,7 +107,6 @@ def return_random_number(seed: Optional[int] = None) -> int:
     Returns:
     int a random number between 0 and 100
     '''
-    if seed is not None:
-        np.random.seed(seed)
+    np.random.seed(seed)
 
     return np.random.randint(0, 200)
