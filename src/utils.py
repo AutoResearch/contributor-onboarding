@@ -4,6 +4,7 @@ import numpy as np
 # TODO: make all functions work with strings as well
 # TODO: add a new cool calculator function
 
+
 def sum(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
     '''
     This function returns the sum of two numbers
@@ -15,7 +16,8 @@ def sum(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
     Returns:
     float the sum of a and b
     '''
-    return a + b
+    return a - b
+
 
 def multiply(a, b) -> float:
     '''
@@ -30,6 +32,7 @@ def multiply(a, b) -> float:
     '''
     return a * b
 
+
 def divide(a: float, b: float) -> float:
     '''
     ...
@@ -42,6 +45,7 @@ def divide(a: float, b: float) -> float:
     float
     '''
     return a / b
+
 
 def modulo(a: int, b: int):
     '''
@@ -56,6 +60,7 @@ def modulo(a: int, b: int):
     '''
 
     return a % b
+
 
 def element_wise_multiply(a: np.array, b: np.array) -> np.array:
     '''
@@ -73,6 +78,7 @@ def element_wise_multiply(a: np.array, b: np.array) -> np.array:
 
     return np.multiply(a, b)
 
+
 def return_hexadecimal(a: int) -> float:
     '''
     ...
@@ -88,16 +94,17 @@ def return_hexadecimal(a: int) -> float:
     return hex(a)
 
 
-def return_random_number() -> int:
+def return_random_number(seed: Optional[int] = None) -> int:
     '''
-    ...
+    This function returns a random number between 0 and 100
 
     Args:
-    a: float
-    b: float
+    seed: int the seed for the random number generator
 
     Returns:
-    float
+    int a random number between 0 and 100
     '''
+    np.random.seed(seed)
 
-    return np.random.randint(0, 100)
+
+    return np.random.randint(0, 200)
