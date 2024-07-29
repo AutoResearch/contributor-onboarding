@@ -41,8 +41,12 @@ def divide(a: float, b: float) -> float:
     Returns:
     float
     '''
-    return a / b
-
+    try:
+        return a / b
+    except ZeroDivisionError:
+        print("Error: Division by zero is not allowed.")
+        return None
+    
 def modulo(a: int, b: int):
     '''
     ...
