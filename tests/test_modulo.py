@@ -1,4 +1,4 @@
-from src.utils import modulo
+from utils import modulo
 
 def test_modulo():
     a = 10
@@ -12,8 +12,11 @@ def test_modulo_by_hand():
 
     result = a - (int(a/b) * b)
 
+    print("It works!!")
+
     assert modulo(a, b) == result
 
-if __name__ == "__name__":
+if __name__ == "__main__":
+    print("This one works")
     test_modulo()
     test_modulo_by_hand()
