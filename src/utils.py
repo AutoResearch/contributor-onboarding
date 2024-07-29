@@ -9,8 +9,8 @@ def sum(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
     This function returns the sum of two numbers
 
     Args:
-    a: float the first number
-    b: float the second number
+    a: int, float the first number
+    b: int, float the second number
 
     Returns:
     float the sum of a and b
