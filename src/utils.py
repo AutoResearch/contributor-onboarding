@@ -1,10 +1,10 @@
-from typing import Optional
+from typing import Optional, Union
 import numpy as np
 
 # TODO: make all functions work with strings as well
 # TODO: add a new cool calculator function
 
-def sum(a: int, b: int) -> int:
+def sum(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
     '''
     This function returns the sum of two numbers
 
