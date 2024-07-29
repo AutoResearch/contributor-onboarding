@@ -38,14 +38,3 @@ def test_divide_zero():
 def test_divide_by_zero():
     with pytest.raises(ZeroDivisionError):
         divide(10.0, 0.0)
-
-
-if __name__ == '__main__':
-    test_multiply()
-    test_divide_positive_numbers()
-    test_divide_negative_numbers()
-    test_divide_positive_and_negative()
-    test_divide_by_one()
-    test_divide_by_fraction()
-    test_divide_zero()
-    test_divide_by_zero()
