@@ -16,7 +16,7 @@ def sum(a: int, b: int) -> int:
     Returns:
     float the sum of a and b
     '''
-    return a + b
+    return a - b
 
 
 def multiply(a, b) -> float:
