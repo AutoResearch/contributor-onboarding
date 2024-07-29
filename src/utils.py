@@ -52,13 +52,10 @@ def modulo(a: int, b: int):
     b: int the divisor
 
     Returns:
-    float
+    int
     '''
 
-    # I think this could be made more efficient?
-    result = a - (np.floor(a / b) * b)
-
-    return result
+    return a % b
 
 def element_wise_multiply(a: np.array, b: np.array) -> np.array:
     '''
