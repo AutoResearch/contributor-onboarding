@@ -110,4 +110,4 @@ def return_random_number(seed: Optional[int] = None) -> int:
     if seed is not None:
         np.random.seed(seed)
 
-    return np.random.randint(0, 100)
+    return np.random.randint(0, 200)
