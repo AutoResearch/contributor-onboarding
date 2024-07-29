@@ -15,6 +15,8 @@ def sum(a: int, b: int) -> int:
     Returns:
     float the sum of a and b
     '''
+    if b == 0:
+        raise ValueError("The divisor 'b' cannot be zero.")
     return a + b
 
 def multiply(a, b) -> float:
