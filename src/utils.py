@@ -2,7 +2,7 @@ from typing import Optional
 import numpy as np
 
 # TODO: make all functions work with strings as well
-# TODO: add a new cool calculator function
+# TODO: add a new calculator function
 
 def sum(a: int, b: int) -> int:
     '''
