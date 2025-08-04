@@ -84,7 +84,7 @@ def return_hexadecimal(a: int) -> float:
     a: int
 
     Returns:
-    float
+    str
     '''
 
     return hex(a)
