@@ -4,16 +4,16 @@ import numpy as np
 # TODO: make all functions work with strings as well
 # TODO: add a new cool calculator function
 
-def sum(a: int, b: int) -> int:
+def sum(a: float, b: float) -> float:
     '''
-    This function returns the sum of two numbers
+    This function returns the sum of two floating-point numbers.
 
     Args:
-    a: float the first number
-    b: float the second number
+        a (float): The first number.
+        b (float): The second number.
 
     Returns:
-    float the sum of a and b
+        float: The sum of a and b.
     '''
     return a + b
 
