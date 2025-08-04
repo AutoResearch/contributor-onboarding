@@ -1,0 +1,4 @@
+from src.utils import return_hexadecimal
+
+def test_hex(number):
+    assert return_hexadecimal(10) == "A"
